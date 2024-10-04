@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardPage</title>
+    <link rel="stylesheet" href="styles/prevencao.css">
+</head>
+<body>
+    <!-- Header: Menu de navegação principal -->
+    <header>
+        <p>dengueInfo</p>
+        <!-- Botão de menu para telas pequenas -->
+        <button class="menu-btn" id="menu-btn">
+            &#9776; <!-- Ícone de hambúrguer -->
+        </button>
+        <nav>
+            <ul id="header-links">
+                <li><a href="casos.html">Início</a></li>
+                <li><a href="Prevencao.html">Prevenção</a></li>
+                <li><a href="Denuncie.html">Denuncie Focos</a></li>
+                <li><a href="dash.html">Monitoramento de Casos</a></li>
+                <li><a href="Faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card-box" id="prevencao">
+            <div class="text-box">
+                <h2>A limpeza não se restringe só às residências. É importante ficar atento a possíveis focos de água parada na escola, no trabalho e em outros locais frequentados diariamente.</h2>
+            </div>
+            <div class="card" id="card1">
+                <div class="front">
+                    <img src="styles/imgs/prevencao.png">
+                </div>
+                <div class="back">
+                    <h2>Prevenção</h2>
+                    <ul>
+                        <li>Eliminação de Criadouros</li>
+                        <li>Uso de Inseticidas</li>
+                        <li>Proteção Pessoal</li>
+                        <li>Monitoramento de Sintomas</li>
+                        <li>Educação Comunitária</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="card-box" id="sintomas">
+            <div class="card" id="card2">
+                <div class="front">
+                    <img src="styles/imgs/sintomas.png">
+                </div>
+                <div class="back">
+                    <h2>Sintomas</h2>
+                    <ul>
+                        <li>Febre Alta</li>
+                        <li>Dor de Cabeça</li>
+                        <li>Dor Muscular e nas Articulações</li>
+                        <li>Erupção Cutânea</li>
+                        <li>Cuidado com Sinais de Alerta</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-box">
+                <h2>Os primeiros sintomas começam, em média, cinco dias após a picada do mosquito transmissor do vírus da dengue, o Aedes aegypti.</h2>
+            </div>
+        </section>
+        
+        <section class="card-box" id="cuidados-basicos">
+            <div class="text-box">
+                <h2>Os cuidados não se limitam apenas ao tratamento. É fundamental manter a hidratação, repousar e observar sinais de alerta em qualquer lugar onde você esteja durante a recuperação da dengue.</h2>
+            </div>
+            <div class="card" id="card3">
+                <div class="front">
+                    <img src="styles/imgs/cuidados.png">
+                </div>
+                <div class="back">
+                    <h2>Cuidados Básicos</h2>
+                    <ul>
+                        <li>Manter Hidratação</li>
+                        <li>Repousar Adequadamente</li>
+                        <li>Monitorar Sintomas</li>
+                        <li>Consultar um Médico</li>
+                        <li>Seguir Orientações Médicas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="styles/imgs/sesa.png" alt="SESA">
+        <img src="styles/imgs/brasao-russas.png" alt="brasão de Russas">
+    </footer>
+
+    <script src="scripts/prevencao.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url('style.css');
+
+:root {
+    --box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    --border-radius: 15px;
+}
+
+#main-box{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#main-box p{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+#formulario{
+    text-align: left;
+    margin: 50px auto;
+    width: 60%;
+    display: flex; 
+    flex-direction: column; 
+}
+
+#formulario button{
+    padding: 15px 20px;
+    margin: 50px auto;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: var(--secondary-color);
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+textarea {
+    height: 30vh; 
+}
+
+.input-fotos {
+    display: block; 
+    width: 100%;
+    padding: 20px;
+    background-color: var(--light-color); 
+    border: none;
+    border-radius: var(--border-radius); 
+    cursor: pointer; 
+    margin-bottom: 15px; 
+    box-shadow: var(--box-shadow);
+}
+
+.input-fotos::-webkit-file-upload-button {
+    padding: 10px;
+    font-size: 16px;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-fotos::-webkit-file-upload-button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+@media (max-width: 1280px){
+    #main-box p{
+        width: 100%;
+    }
+
+    #formulario{
+        width: 100%;
+    }
+}

@@ -1,0 +1,94 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DengueInfo</title>
+        <link rel="stylesheet" href="styles/casos.css">
+    </head>
+
+    <body>
+        <!-- Header: Menu de navegação principal -->
+        <header>
+            <p>dengueInfo</p>
+            <!-- Botão de menu para telas pequenas -->
+            <button class="menu-btn" id="menu-btn">
+                &#9776; <!-- Ícone de hambúrguer -->
+            </button>
+            <nav>
+                <ul id="header-links">
+                    <li><a href="casos.html">Início</a></li>
+                    <li><a href="Prevencao.html">Prevenção</a></li>
+                    <li><a href="Denuncie.html">Denuncie Focos</a></li>
+                    <li><a href="dash.html">Monitoramento de Casos</a></li>
+                    <li><a href="Faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main: Conteúdo principal da página -->
+        <main>
+            <!-- Seção principal com chamada de atenção -->
+            <section id="principal">
+                <div id="content">
+                    <h1>Não perca o foco e cuide de quem está perto de você.</h1>
+                    <p>Com o aumento dos casos de dengue, é crucial redobrar a atenção. Proteja-se e tome cuidado até mesmo com os vizinhos para evitar a proliferação do mosquito transmissor. Sua saúde e a de todos ao redor dependem da nossa prevenção.</p>
+                    <a href="Prevencao.html">
+                        <button>Como se prevenir</button>
+                    </a>
+                    
+                </div>
+                <img src="styles/imgs/home-img1.png" alt="Prevenção contra a dengue">
+            </section>
+
+            <!-- Seção de apoio com logos -->
+            <section id="apoio">
+                <p>Vamos juntos combater o mosquito</p>
+                <p><b>Apoio:</b></p>
+                <div id="imgs-apoiadores">
+                    <img src="styles/imgs/brasao-russas.png" alt="brasão de Russas">
+                    <img src="styles/imgs/sesa.png" alt="SESA">
+                </div>
+            </section>
+
+            <!-- Seção com informações sobre os casos de dengue -->
+            <section id="informacoes">
+                <div id="text-content">
+                    <h1>Casos de dengue atualizados na cidade de Russas e no Ceará:</h1>
+                    <p>Os dados são de acordo com o integraSUS disponibilizado pelo governo do estado do Ceará.</p>
+                    <p>Esses dados são atualizados semanalmente, conforme a ordem abaixo:</p>
+                </div>
+
+                <div id="dados">
+                    <!-- Box com informações sobre os casos anuais -->
+                    <div class="dados-box">
+                        <h1 id="casos-notificados"></h1>
+                        <p>Total de casos notificados em Russas em 2024</p>
+                    </div>
+                    <!-- Box com informações sobre os casos semanais -->
+                    <div class="dados-box">
+                        <h1 id="numero-casos-anuais"></h1>
+                        <p>Total de casos esse ano em Russas</p>
+                        <p id="numero-mortes-anuais"></p>
+                    </div>
+                    <!-- Box com percentual de crescimento -->
+                    <div class="dados-box">
+                        <h1 id="numero-casos-semanais"></h1>
+                        <p>Total de casos nesta semana no estado do Ceará</p>
+                    </div>
+                </div>
+                <a href="dash.html"><button>Mais informações</button></a>
+            </section>
+        </main>
+
+        <!-- Footer: Rodapé com logos dos apoiadores -->
+        <footer>
+            <img src="styles/imgs/sesa.png" alt="SESA">
+            <img src="styles/imgs/brasao-russas.png" alt="brasão de Russas">
+        </footer>
+
+        <script src="scripts/script.js"></script>
+    </body>
+
+    </html>

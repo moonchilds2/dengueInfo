@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Denuncie focos de mosquito da dengue e ajude a prevenir a doença na sua comunidade.">
+    <title>Denuncie Focos de Dengue - DenuncieAqui</title>
+    <link rel="stylesheet" href="styles/denuncie.css">
+</head>
+<body>
+    <!-- Header: Menu de navegação principal -->
+    <header>
+        <p>dengueInfo</p>
+        <!-- Botão de menu para telas pequenas -->
+        <button class="menu-btn" id="menu-btn">
+            &#9776; <!-- Ícone de hambúrguer -->
+        </button>
+        <nav>
+            <ul id="header-links">
+                <li><a href="casos.html">Início</a></li>
+                <li><a href="Prevencao.html">Prevenção</a></li>
+                <li><a href="Denuncie.html">Denuncie Focos</a></li>
+                <li><a href="dash.html">Monitoramento de Casos</a></li>
+                <li><a href="Faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="main-box">
+            <h1>Denuncie Focos de Dengue</h1>
+            <p>
+                Sua denúncia é fundamental para combater a dengue! Ao informar focos de mosquitos, você ajuda a proteger sua comunidade e prevenir a doença. Informe o local e qualquer detalhe relevante para que possamos agir rapidamente.
+            </p>
+            
+            <form id="formulario" enctype="multipart/form-data">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            
+                <label for="bairro">Bairro/Comunidade:</label>
+                <input type="text" id="bairro" name="bairro" required>
+            
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            
+                <label for="descricao">Descrição do Foco:</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+            
+                <label for="fotos">Fotos:</label>
+                <input type="file" id="fotos" name="fotos" accept="image/*" multiple class="input-fotos">
+            
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <!-- Adicione um elemento para exibir mensagens -->
+            <div id="mensagem"></div>
+            
+        </div>     
+    </main>
+    
+
+    <!-- Footer: Rodapé com logos dos apoiadores -->
+    <footer>
+        <img src="styles/imgs/sesa.png" alt="SESA">
+        <img src="styles/imgs/brasao-russas.png" alt="brasão de Russas">
+    </footer>
+
+    
+    <script src="scripts/denuncie.js"></script>
+</body>
+</html>

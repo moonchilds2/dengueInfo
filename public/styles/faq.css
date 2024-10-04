@@ -1,0 +1,70 @@
+@import url('style.css');
+
+/* Estrutura principal */
+#main-box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* FAQ layout */
+#faq-box {
+    margin-top: 8vh;
+}
+
+.faq-item {
+    width: 100%;
+    padding: 2px 10px;
+    margin-bottom: 6vh;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Perguntas e Respostas */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    transition: font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    width:80%;
+    margin: 3vh auto;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+.toggle {
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+/* Ativação de resposta e estilização */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question p {
+    margin: 1vh auto;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.faq-item.active .toggle {
+    transform: rotate(45deg);
+}

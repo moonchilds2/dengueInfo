@@ -1,0 +1,64 @@
+@import url('style.css');
+
+.container{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.caixa{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 120px;
+    border-radius: 10px;
+    margin: 0 100px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.caixa p{
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+.graph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+#grafico{
+    width: 900px;
+    
+}
+
+.graph_01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graph_01 p{
+    margin-top: 10px;
+}
+
+.graph_02{
+    transform: rotate(270deg);
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

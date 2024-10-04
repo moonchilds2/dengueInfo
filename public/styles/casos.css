@@ -1,0 +1,111 @@
+@import url(style.css);
+
+/* Sections */
+#principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0;
+    margin: 20px 0 20px 80px;
+    border-radius: 10px;
+}
+
+#content {
+    max-width: 600px;
+    text-align: center;
+}
+
+#content p {
+    margin: 15px 0;
+}
+
+#principal img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+/* Apoio */
+#apoio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 200px 0;
+}
+
+#imgs-apoiadores {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Informações */
+#informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#informacoes h1 {
+    margin-bottom: 25px;
+}
+
+#dados {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+}
+
+.dados-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.dados-box p,
+.dados-box h1 {
+    color: var(--primary-color);
+}
+
+
+
+/* Responsividade */
+@media (max-width: 1280px) {
+
+    #principal {
+        flex-direction: column;
+        margin: 10px;
+        padding: 20px;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #principal img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #apoio {
+        margin: 100px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #dados {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dados-box {
+        margin-bottom: 20px;
+    }
+}
+
